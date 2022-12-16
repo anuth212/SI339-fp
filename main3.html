@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link rel="icon" href="images/favicon.ico">
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/html5reset.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+    
+	<title>My Photography</title>
+</head>
+<body>
+	<header>
+		<div class="skip"><a href="#skip" >Skip to Main Content</a></div>
+	  <nav id ="bigNav" class = "original">
+		<ul>
+            <li ><a href = "main.html">About Me</a></li>
+			<li><a href = "main2.html">Friends and Family</a></li>
+			
+			<li class="active"><a href = "main2.html">My Photography</a></li>
+			<li><a href = "index.html">Music</a></li>
+		</ul>
+		</nav>
+			<!-- The overlay -->
+		<div id="myNav" class="overlay">
+
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<ul>
+					<li ><a href = "main.html">About Me</a></li>
+					<li><a href = "main2.html">Friends and Family</a></li>
+					
+					<li class="active"><a href = "main2.html">My Photography</a></li>
+					<li><a href = "index.html">Music</a></li>
+				</ul>
+			</div>
+		
+			</div>
+		<div class = "opener">
+		
+		
+		<!-- Use any element to open/show the overlay navigation menu -->
+			<span onclick="openNav()">☰</span>
+		</div>
+		
+	</header>
+
+	<main id = "text3">
+		<h1 class = "header">My Photography</h1>
+		<div id = "photo-info">
+			<p>I am definitely not the best photographer, but I love taking photos. All of these were taken on my IPhone X.</p>
+		</div>
+		<div class = "black-border">
+		<div id = "skip" class = "grid-wrap">
+
+			<a href ="images/page2/artists.JPG" target="_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/artists.JPG" alt ="Sign saying 'We are all artists'"></div>
+			</a>
+
+
+			<a href ="images/page2/darkCloud.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/darkCloud.JPG" alt ="Pink cloud and dark greyish black clouds in the sky"></div>
+			</a>
+
+			<a href ="images/page2/darkMoon.JPG"  target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/darkMoon.JPG" alt ="Moon with a purple sky and black trees"></div>
+			</a>
+
+			<a href ="images/page2/glassAnimals.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/glassAnimals.JPG" alt ="Person holding up a heart sign with their hands at Glass Animals concert"></div>
+			</a>
+
+			<a href ="images/page2/pinkMoon.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/pinkMoon.JPG" alt ="Pink, purple, and orange sunset"></div>
+			</a>
+
+			<a href ="images/page2/shadow.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/shadow.JPG" alt ="Sillouete photo of me with a rainbow background"></div>
+			</a>
+
+			<a href = "images/page2/skull.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/skull.JPG" alt ="Framed picture of a skull on a red wall"></div>
+			</a>
+
+			<a href ="images/page2/sky.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/sky.JPG" alt ="Sunset picture from inside a car"></div>
+			</a>
+
+			<a href ="images/page2/trees.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/trees.JPG" alt ="Yellow trees on North campus"></div>
+			</a>
+
+			<a href ="images/page2/alaska.jpg" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/alaska.jpg" alt ="White glaciers in Alaska"></div>
+			</a>
+
+			<a href ="images/page2/triple.JPG" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/triple.JPG" alt ="My friends and I inside the color factory in Chicago"></div>
+			</a>
+
+			
+
+			<a href ="images/page2/basketball.jpg" target=    "_blank" data-lightbox="gallery">
+				<div><img src = "images/page2/basketball.jpg" alt ="Sunset with a black shadow basketball hoop"></div>
+			</a>
+		</div>
+		</div>
+
+		
+		
+	</main>
+	<footer>
+		<div id = "footerItems2">
+	
+				<a href = "https://www.linkedin.com/in/anu-thomas18" target="_blank"><img id = "linked" class = "icon" src = "images/icons/linkedIn.png" alt = "Logo for linkedIn"></a></li>
+				<a href = "https://www.instagram.com/_anuthomas_/" target="_blank"><img id = "insta" class = "icon" src = "images/icons/insta.png" alt = "Logo for Instagram"></a></li>
+				
+				<p id = "copyright">
+					Copyright @ 2022 Anu Thomas
+				</p>
+		</div>
+	</footer>
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<script src = "dist/js/overlay.js"></script>
+</body>
+
+</html>
+
+
+<!--Overlay reference
+https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+-->

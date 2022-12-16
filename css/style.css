@@ -1,0 +1,1020 @@
+img {
+    width: 400px;
+    height: 300px;
+}
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+ul{
+  margin-bottom: 0px;
+}
+
+/*nav*/
+
+
+
+
+
+
+
+
+
+#insta{
+  margin: 5px;
+  vertical-align: middle;
+  
+}
+#linked{
+  margin: 1px;
+  vertical-align: middle;
+}
+
+
+.icon{
+  height: 3em;
+  width: 2.5em;
+
+  
+  display: inline-block;
+  
+  margin: auto;
+  padding-bottom: 15px;
+ 
+}
+
+#footerItems{
+  padding-top: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footerItems2{
+  padding-top: 40px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(221, 67, 67);
+}
+
+
+#copyright{
+  font-size: 20px;
+  color: black;
+  padding-bottom: 40px;
+}
+
+/*footer*/
+
+
+/* skip to content */
+.skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    color: black;
+  }
+  
+
+  .skip a{
+    position: relative;
+    top: -40px;
+    color: black;
+  }
+  /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
+  .skip a:focus{
+    position: relative;
+    top: 5px;
+    color: black;
+  }
+
+
+  /* page 1*/
+
+  /*red part*/
+
+  #infoOnMe{
+    width: fit-content;
+  }
+  #malay{
+    font-size: 80px;
+    width: 100vw;
+    padding-top: 60px;
+    max-height:340px;
+  }
+
+  #malay-des{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 0;
+    padding-bottom: 40px;
+  }
+
+
+  #text1{
+   
+    text-align: left;
+  }
+
+  #fullName{
+    justify-self: flex-start;
+    font-size: 40px;
+  }
+
+  #about{
+    display: none;
+    
+  }
+
+  #last{
+    display:none;
+    
+  }
+
+  #tag{
+    
+    font-size: 23px;
+    
+  }
+
+  #tag2{
+    font-size: 23px;
+  }
+
+  #text1{
+    display: flex;
+    
+    margin-bottom: auto;
+    padding-bottom: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   
+    background-color: rgb(221, 67, 67);
+    padding-left: 3%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px black solid;
+    padding-bottom: 30px;
+  }
+  
+  /*white part*/
+ 
+  #text2{
+    
+    height: 100%;
+    border: black 2px;
+    background-color: rgb(3, 3, 3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
+  #bio{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: rgb(221, 67, 67);
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    height: 30%;
+    width: 80%;
+    padding: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border: 10px white solid;
+    
+  }
+
+  #one{
+   
+    padding-top: 20px;
+    font-size: 4vw;
+    padding-bottom: 20px;
+    
+  }
+
+  #two{
+    
+    font-size: 3.5vw;
+    padding-bottom: 20px;
+  }
+
+  #three{
+    
+    font-size: 3.3vw;
+    padding-bottom: 10px;
+  }
+  #me{
+    margin-left: 20px;
+    width: 34vw;
+    height: 18vw;
+    align-self: flex-end;
+    border-radius: 50%;
+  }
+  
+  /*learn more*/
+  
+ 
+
+  #learn-more{
+    display: none;
+  }
+ 
+  /*page 2*/
+   /* page 2*/
+   #photos{
+    margin-top: 2px;
+    padding-top: 20px;
+    background-color:rgb(0, 0, 0);
+    padding-bottom: 20px;
+  }
+
+  .photo-header{
+    font-size: 30px;
+    text-align: center;
+    background-color:rgb(221, 67, 67);
+    width:fit-content;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px white solid;
+    color:black;
+  }
+
+  .images{
+    display: block;
+    margin: auto;
+   
+    
+  }
+
+  .card{
+    width:400px;
+    height: fit-content;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .card-title{
+    font-size: 30px;
+  }
+
+  .lb-data .lb-caption {
+    font-weight: lighter;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+   
+  }
+   .lb-data .lb-details {
+    width: 100%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+    text-align: center;
+
+    height: fit-content;
+
+    padding-top: 2px;
+  }
+
+  #family{
+    width: 400px;
+  }
+
+  .flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    
+  }
+  
+  .flex-wrap img{
+    width: auto;
+    align-items: center;
+
+    height: fit-content;
+    margin: 5px;
+    border: white 2px solid
+  }
+
+  #about-photos{
+    display: none;
+  }
+
+
+
+
+
+ 
+
+
+
+
+  /*page 3*/
+
+  .header{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color:rgb(0, 0, 0);
+    width:fit-content;
+    margin-right:auto;
+    margin-left: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+   
+  }
+
+  #text3{
+    background-color:rgb(221, 67, 67);
+    padding-top: 20px ;
+    padding-bottom: 100px;
+  }
+
+  #photo-info{
+    display: none;
+
+  }
+
+  
+
+
+
+  .grid-wrap{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    justify-content: center;
+    justify-self: center;
+    align-items: stretch;
+    column-gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    width: fit-content;
+  }
+
+  .grid-wrap  img{
+    width: 80%;
+    height: 60%;
+    object-fit: fill;
+    margin-left: 10%;
+  }
+
+  
+
+  
+
+  
+
+
+  *{
+    font-family:'Courier New', Courier, monospace;
+  }
+
+  
+
+    .opener{
+      color:black;
+      padding-left:10px;
+      font-size: 30px;
+    }
+    /* The Overlay (background) */
+    .overlay {
+      /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+      height: 100%;
+      width: 0;
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      background-color: rgb(0,0,0); /* Black fallback color */
+      background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+      overflow-x: hidden; /* Disable horizontal scroll */
+      transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    }
+  
+    /* Position the content inside the overlay */
+    .overlay-content {
+      position: relative;
+      top: 25%; /* 25% from the top */
+      width: 100%; /* 100% width */
+      text-align: center; /* Centered text/links */
+      margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    }
+  
+    /* The navigation links inside the overlay */
+    .overlay .active{
+      text-decoration: underline;
+    }
+
+    .overlay a:visited{
+      text-decoration: none;
+    }
+
+    .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 36px;
+      color: #ffffff;
+      display: block; /* Display block instead of inline */
+      transition: 0.3s; /* Transition effects on hover (color) */
+    }
+  
+    /* When you mouse over the navigation links, change their color */
+    .overlay a:hover, .overlay a:focus {
+      color:  #f1f1f1;
+    }
+  
+    /* Position the close button (top right corner) */
+    .overlay .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+    }
+
+    #bigNav{
+      display: none;
+    }
+  
+    #bigNav li{
+      display: none;
+    }
+    /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+    @media screen and (max-height: 450px) {
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+
+
+  /* for music page */
+
+#mainSong{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color:black;
+  width: fit-content;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  background-color:rgb(221, 67, 67);
+
+  margin-bottom: 10px;
+  border: 2px white solid;
+  color:black;
+}
+h3 {
+  padding-bottom: 5px;
+  padding-top: 3px;
+}
+
+.genre {
+  border: solid 2px;
+  border-radius: 3px;
+  margin: 5px;
+  white-space: nowrap;
+  background-color: #ccc;
+  padding: 2px;
+}
+
+.btn {
+  margin: 10px;
+  width: 200px;
+  margin-bottom: 60px;
+}
+
+#songHead{
+  color:white;
+  font-size: 20px;
+  width: 100%;
+}
+.row{
+  margin-right: auto;
+  margin-left:auto;
+  text-align: center;
+}
+
+
+.artist {
+  display: inline-block;
+  height: 250px;
+  width: 80%;
+  margin-left: 25%;
+
+}
+
+.artist-albumcover {
+  max-width: 200px;
+  margin-right: 30px;
+  background-color: white;
+  width: fit-content;
+  height:fit-content;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 8px rgb(221, 67, 67) solid;
+}
+
+.artist-albumcover img {
+  width: 120%;
+  display: inline;
+  
+}
+
+.artist-info {
+  max-height: 250px;
+  background-color: white;
+  color: black;
+  border: 8px rgb(221, 67, 67) solid;
+  width: 35%;
+}
+
+.container img{
+  height:100px;
+  width:100px;
+}
+
+.container{
+  padding-top:20px;
+  border-top:white 2px solid;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  margin-right: 20%;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#makeBlack {
+  height: 100%;
+  background-color: black;
+  width: 100%;
+  }
+
+#whiteBack{
+  background-color: white;
+}
+
+.btn{
+  font-size: 19px;
+  padding: 10px;
+}
+
+
+
+    
+
+  
+
+  /*media queries*/
+  @media screen and (min-width :768px){
+   
+
+    /*page 1*/
+    #malay{
+      font-size: 180px;
+      padding-top: 60px;
+      max-height:340px;
+    }
+  
+    #malay-des{
+      padding-left: 10px;
+      font-size: 30px;
+      font-weight: 0;
+      padding-bottom: 40px;
+    }
+  
+    #fullName{
+      font-size: 80px;
+    }
+  
+    #text1{
+     
+      text-align: left;
+    }
+  
+    
+  
+    #tag{
+      
+      font-size: 40px;
+      
+    }
+  
+    #tag2{
+      font-size: 40px;
+    }
+  
+    #text1{
+      display: flex;
+      
+      margin-bottom: auto;
+      padding-bottom: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+     
+      background-color: rgb(221, 67, 67);
+      padding-left: 4%;
+     
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px black solid;
+      padding-bottom: 30px;
+    }
+
+    #learn-more{
+      width: 100%;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 100px;
+      font-size: 20px;
+      font-weight: bold;
+      display: inline-block;
+      color:white;
+      background-color: black;
+    }
+  
+    div.buttons{
+      margin-top: 20px;
+      background-color: rgb(221, 67, 67);
+      font-size: 20px;
+      color: black;
+      display: inline-block;
+      padding: 20px;
+      
+      border:white solid 3px;
+      width: 35%;
+    }
+
+    /*page 2*/
+    #about-photos{
+      display: block;
+      text-align: center;
+      font-size: 20px;
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      color: white;
+      padding-bottom: 20px;
+    }
+
+    .card{
+      width:300px;
+      height: fit-content;
+      text-align: center;
+      margin: 20px;
+    }
+  
+    .card-title{
+      font-size: 20px;
+    }
+    
+
+    /*page 3*/
+    #photo-info{
+      background-color: white;
+      color: black;
+      border: black 5px solid;
+      font-size: 30px;
+      max-width: 80%;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      display: block;
+  
+    }
+    .grid-wrap{
+      grid-template-columns: auto auto ;
+    
+      row-gap: 2px;
+      
+      border: 8px white solid;
+      background-color: white;
+    }
+  
+    .grid-wrap img{
+      width: 300px;
+      height: 320px;
+      object-fit: fill;
+      margin-left:0;
+    }
+  
+    .black-border{
+      border: black 5px solid;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*page 4*/
+    .btn{
+      font-size: 23px;
+      width:250px;
+    }
+  
+    #songHead{
+      font-size: 25px;
+    }
+  
+    #mainSong{
+      font-size: 40px;
+    }
+    
+
+  }
+
+
+  @media screen and (min-width :1440px){
+    /*nav*/
+    /*nav*/
+    .opener{
+      display: none;
+    }
+    .overlay{
+      display: none;
+    }
+
+
+    #bigNav li{
+      display: inline;
+      padding: 20px;
+      text-decoration: none;
+      vertical-align: middle;
+      
+  }
+    #bigNav .active{
+      text-decoration: underline;
+    }
+    
+    #bigNav{
+        display: inline-block;
+        margin-bottom: 0px;
+        width:100%;
+        background-color: white;
+        font-size: 20px;
+        border-bottom: black 10px solid;
+        vertical-align: middle;
+        
+    }
+    .original{
+      padding-top: 10px;
+    }
+    
+    
+    #bigNav a{
+        text-decoration: none;
+        color:black;
+        font-weight: bolder;
+    
+    }
+    
+    
+    
+    #bigNav a:visited{
+        text-decoration: none;
+    }
+
+    /*nav end*/
+
+    /*page 1*/
+    #fullName{
+      display: none;
+    }
+  
+   
+
+    #malay{
+      font-size: 250px;
+    }
+  
+    #malay-des{
+      padding-left: 40px;
+      font-size: 25px;
+
+    }
+  
+  
+  
+    #about{
+      display: flex;
+      font-size: 180px;
+      justify-self: flex-end;
+      max-height:130px;
+      
+    }
+  
+    #last{
+      display: flex;
+      justify-self: flex-start;
+      font-size: 180px;
+      
+    }
+  
+    #tag{
+      
+      font-size: 40px;
+      
+    }
+  
+    #tag2{
+      font-size: 40px;
+    }
+  
+    #text1{
+      padding-left: 8%;
+    }
+    
+    /*white part*/
+  
+    #text2{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+  
+    #bio{
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  
+    
+  
+    #two{
+      font-size: 2.5vw;
+      padding-bottom: 20px;
+    }
+  
+    #three{
+      font-size: 2vw;
+      padding-bottom: 40px;
+    }
+  
+    
+    /*learn more*/
+    #learn-more{
+      font-size: 30px;
+      font-weight: normal;
+    }
+  
+    div.buttons{
+      margin-right: 20px;
+      font-size: 30px;
+
+      width: 35%;
+    }
+   
+     /* page 2*/
+
+
+  .photo-header{
+    font-size: 60px;
+
+  }
+
+  .card{
+    width:400px;
+    height: fit-content;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .card-title{
+    font-size: 30px;
+  }
+
+
+
+  
+
+  #about-photos{
+    font-size: 30px;
+    max-width: 60%;
+  }
+
+  /*page 3*/
+  .header{
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+
+
+  #photo-info{
+    background-color: white;
+    color: black;
+    border: black 5px solid;
+    font-size: 30px;
+    max-width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+    display: block;
+
+  }
+
+  
+
+
+
+  .grid-wrap{
+    grid-template-columns: auto auto auto;
+  
+    row-gap: 5px;
+    
+    border: 10px white solid;
+    background-color: white;
+  }
+
+  .grid-wrap img{
+    width: 400px;
+    height: 420px;
+    object-fit: fill;
+    margin-left:0;
+  }
+
+  .black-border{
+    border: black 15px solid;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /*fourth page*/
+  .artist-info{
+    margin-left: 0;
+    width: 300px;
+    font-size: 16px;
+  }
+  .artist{
+   width: 40%;
+   margin-left: 10%;
+  }
+
+  .container img{
+    height:100px;
+    width:150px;
+  }
+  .container{
+    margin-bottom: 20px;
+  }
+
+  .btn{
+    font-size: 30px;
+    width:330px;
+  }
+
+  #songHead{
+    font-size: 25px;
+  }
+
+  #mainSong{
+    font-size: 60px;
+  }
+
+
+}
+
+@media (prefers-reduced-motion) {
+  .overlay{
+    transition: none;
+  }
+
+  .skip a{
+    transition: none;
+  }
+}
+
+

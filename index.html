@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+	<link rel="icon" href="images/favicon.ico">
+   <title>Music</title>
+   <!--Bootstrap-->
+   <link rel="stylesheet" href="css/html5reset.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+   <!--Custom Style-->
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!--Vue-->
+   <script src="https://unpkg.com/vue@3"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+</head>
+
+<body>
+   <div id = "makeBlack">
+    <header id = "whiteBack">
+		<div class="skip"><a href="#app">Skip to Main Content</a></div>
+	  <nav id ="bigNav" class ="original">
+		<ul>
+         <li><a href = "main.html">About Me</a></li>
+			<li><a href = "main2.html">Friends and Family</a></li>
+			
+			<li><a href = "main3.html">My Photography</a></li>
+         <li class="active"><a href = "index.html">Music</a></li>
+			
+		</ul>
+
+		
+			
+	
+		
+	</nav>
+
+	<!-- The overlay -->
+	<div id="myNav" class="overlay">
+
+	<!-- Button to close the overlay navigation -->
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+	<!-- Overlay content -->
+	<div class="overlay-content">
+		<ul>
+         <li><a href = "main.html">About Me</a></li>
+			<li><a href = "main2.html">Friends and Family</a></li>
+			
+			<li><a href = "main3.html">My Photography</a></li>
+			
+			<li class="active"><a href = "index.html">Music</a></li>
+		</ul>
+	</div>
+  
+  	</div>
+  <div class = "opener">
+
+
+  <!-- Use any element to open/show the overlay navigation menu -->
+  	<span onclick="openNav()">☰</span>
+</div>
+</header>
+   <main>
+      <div id='app'>
+         <div class="container">
+            
+            <div class="row">
+               <h1 id ="mainSong">My Favorite Music</h1>
+               <h2 id = "songHead">Press a button to view songs from my favorite artists</h1>
+               <div class="col-lg-12 col-md-12 col-sm-12">
+                  <button v-bind:class="'btn btn-danger'" v-on:click="waterParks">Waterparks</button>
+                  <button v-bind:class="'btn btn-danger'" v-on:click="chase">Chase Atlantic</button>
+                  <button v-bind:class="'btn btn-danger'" v-on:click="hood">The Neighborhood</button>
+                  
+               </div>
+            </div>
+
+            
+
+            <div v-for="(result,index) in results">
+               <div class='col-lg-6 col-md-6 col-sm-12 artist'>
+                  <div class='artist-albumcover col-sm-4'>
+                     <!--<img v-bind:src="artist1">-->
+                     <img :src="result.artworkUrl100" alt = '"Album cover for " + result.collectionName + " by " + "result.artistName"'>
+                     
+                  </div>
+
+                  <div class='artist-info col-sm-6'>
+                     <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" v-bind:href="'#tab1' + index">Tab1</a></li>
+                        <li><a data-toggle="tab" v-bind:href="'#tab2'+index">Tab2</a></li>
+                     </ul>
+                     <div class="tab-content"  >
+                        <div v-bind:id ="'tab1'+index"  class ="tab-pane active">
+
+                           <span v-if="!(result.artistName)||result.artistName ==''">
+                              <b>Artist Name: </b> No information provided</br>
+                           </span>
+                           <span v-else>
+                              <b>Artist Name: </b> {{result.artistName}}</br>
+                           </span>
+
+                           <span v-if="!(result.collectionName)||result.collectionName ==''">
+                              <b>Collection Name: </b> No information provided</br>
+                           </span>
+                           <span v-else>
+                              <b>Collection Name: </b> {{result.collectionName}}</br>
+                           </span>
+                           
+                           
+                           
+
+                           
+
+                           
+                        
+                           
+                           <br clear ="left">
+                        </div>
+                        <div v-bind:id ="'tab2'+index" class ="tab-pane">
+                           <span v-if="result.kind=='' || !(result.kind)">
+                              <b>Kind: </b> No information provided</br>
+                           </span>
+                           <span v-else>
+                              <b>Kind: </b> {{result.kind}}</br>
+                           </span>
+                           
+                           <span v-if="result.previewUrl=='' || !(result.previewUrl)">
+                              <b>Preview: </b> No information provided</br>
+                           </span>
+                           <span v-else>
+                              <b>Preview: </b> <a v-bind:href = result.previewUrl> Link</a></br>
+                           </span>
+
+                           
+                           
+                        </div>
+                     </div>
+                  
+                  </div>
+               </div>
+
+               
+            </div>
+         </div>
+      </div>
+      </div>
+   </main>
+   <footer>
+      <div id = "footerItems">
+   
+            <a href = "https://www.linkedin.com/in/anu-thomas18" target="_blank"><img id = "linked" class = "icon" src = "images/icons/linkedIn.png" alt = "Logo for linkedIn"></a></li>
+            <a href = "https://www.instagram.com/_anuthomas_/" target="_blank"><img id = "insta" class = "icon" src = "images/icons/insta.png" alt = "Logo for Instagram"></a></li>
+            
+            <p id = "copyright">
+               Copyright @ 2022 Anu Thomas
+            </p>
+      </div>
+   </footer>
+   <script src="dist/js/script.js"></script>
+   <script src = "dist/js/overlay.js"></script>
+
+</body>
+
+</html>
