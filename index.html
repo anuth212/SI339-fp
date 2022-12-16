@@ -90,6 +90,7 @@
 
             <div v-for="(result,index) in results">
                <div class='col-lg-6 col-md-6 col-sm-12 artist'>
+                  <div class = "newGrid">
                   <div class='artist-albumcover col-sm-4'>
                      <!--<img v-bind:src="artist1">-->
                      <img :src="result.artworkUrl100" alt = '"Album cover for " + result.collectionName + " by " + "result.artistName"'>
@@ -147,9 +148,10 @@
                            
                         </div>
                      </div>
-                  
+                  </div>
                   </div>
                </div>
+               
 
                
             </div>
